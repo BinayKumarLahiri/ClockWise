@@ -7,24 +7,24 @@
   font-weight: 400;
   font-style: normal;
 }
-:root{
+/* :root{
   --background:#07161f;
   --nav:#183D3D;
   --primary:#93B1A6;
   --shadow: #183d3d7b;
-}
+} */
 /* :root{
   --background:#222831;
   --nav:#30475E;
   --primary:#DDDDDD;
   --shadow: #30475E7b;
 } */
-/* :root{
+:root{
   --background:#DDDDDD;
   --nav:#222831;
   --primary:#30475E;
   --shadow: #2228317b;
-} */
+}
 .screen {
   width: 100vw;
   height: 100vh;
@@ -73,12 +73,7 @@
 .nav i span {
   font-size: 0.6rem;
 }
-.nav i:hover {
-  /* background-color: #fff; */
-  background-color: var(--background);
-  /* color: #212121; */
-  color: var(--primary);
-}
+
 .nav i:first-child {
   /* background-color: #fff; */
   background-color: var(--background);
