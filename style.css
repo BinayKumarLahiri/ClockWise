@@ -69,6 +69,10 @@
   justify-content: center;
   gap: 0.5rem;
   border-radius: 15px 0 0 15px;
+  cursor: pointer;
+}
+.nav i:hover{
+  color: #4e6c88;
 }
 .nav i span {
   font-size: 0.6rem;
@@ -199,4 +203,56 @@
     justify-content: center;
     gap: 2rem;
   }
+}
+
+
+
+/* Section For the Stopwatch Section */
+.stopwatchCircle{
+  width: 95%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  /* background-color: #0404045b; */
+  background-color: var(--shadow);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stopwatchCircle>.time{
+  /* color: var(--background); */
+  color: #eeeeee;
+  font-size: clamp(1rem, 2vmin + 1rem ,15rem);
+}
+.btngroup{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btngroup button{
+  width: 30%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  /* color: var(--background); */
+  color: #eeeeee;
+  cursor: pointer;
+}
+.btngroup .reset:hover,.start:hover{
+  background-color: #373e4a;
+}
+.pause:hover{
+  background-color: rgb(232, 73, 45);
+}
+.reset{
+  background-color: var(--nav);
+}
+.start{
+  background-color: var(--nav);
+}
+.pause{
+  background-color: tomato;
 }
