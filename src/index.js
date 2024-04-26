@@ -1,3 +1,13 @@
+// document.addEventListener('onload',()=>{
+//     document.body.style.width = window.innerWidth + 'px';
+//     document.body.style.height = window.innerHeight + 'px';
+//     console.log(window.innerWidth,",",window.innerHeight);
+// })
+function set() {
+    document.body.style.width = window.innerWidth + 'px';
+    document.body.style.height = window.innerHeight + 'px';
+    console.log(window.innerWidth,",",window.innerHeight);
+}
 function clear() {
     const btns = document.querySelectorAll("i");
     btns.forEach(btn=>{
