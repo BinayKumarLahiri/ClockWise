@@ -203,6 +203,7 @@
     justify-content: center;
     gap: 2rem;
   }
+  
 }
 
 
@@ -255,4 +256,80 @@
 }
 .pause{
   background-color: tomato;
+}
+
+.settime{
+  width: 70%;
+  aspect-ratio: 1/1;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:575px) {
+  .settime{
+    width: 100%;
+  }
+  .clock{
+    width: 100%;
+  }
+}
+.timechoser{
+  width: 100%;
+  height: 40%;
+  /* border: 2px solid black; */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.timeinput{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input[type='number'] {
+  width: 30%;
+  height: 100%;
+  /* font-size: 3rem; */
+  font-size: clamp(3rem, 2vmin + 1rem ,15rem);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  border: none;
+  outline: none;
+}
+.timerDisplay{
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid black; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.timerDisplay .clock{
+  width: 100%;
+}
+
+.timerDisplay .shadow2{
+  background-color: var(--background);
+  background: conic-gradient(var(--background) 0deg, var(--shadow) 0deg);
+}
+.timerDisplay .stopwatchCircle{
+  background-color: var(--nav);
+}
+
+.visible{
+  display: flex;
 }

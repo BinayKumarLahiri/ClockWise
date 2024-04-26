@@ -9,7 +9,7 @@ let m = 0;
 let h = 0;
 start.addEventListener('click',()=>{
     counter = setInterval(()=>{
-        ms = ms + 1;
+        ms = ms + 10;
         if(ms==100) {
             ms = 0;
             s = s + 1;
