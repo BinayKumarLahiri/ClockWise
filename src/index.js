@@ -7,6 +7,10 @@ function set() {
     document.body.style.width = window.innerWidth + 'px';
     document.body.style.height = window.innerHeight + 'px';
     console.log(window.innerWidth,",",window.innerHeight);
+    if(window.innerWidth<575) {
+        document.querySelector('.container').style.width = window.innerWidth + 'px';
+        document.querySelector('.container').style.height = window.innerHeight + 'px';
+    }
 }
 function clear() {
     const btns = document.querySelectorAll("i");
